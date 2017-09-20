@@ -1,0 +1,25 @@
+API back-end
+This will allow a data collector to CRUD the data they collect. Essentially, you are needed to provide all the necessary endpoints for this functionality. To make it interesting, only authenticated data collectors can access these endpoints (look into using JSON web tokens for this).
+
+Documentation of how to use the endpoints is a plus.
+
+The preferred framework for faster creation of this endpoints is Django Rest Framework.
+
+Collected data
+The data should have at least the following properties:
+The data collector
+Name of person data is being collected from
+Location of person (Using coordinates is a plus as they give you more options when presenting)
+Favorite drink of the person
+Date of collection
+Any other data you wish to add is up to you (make it earn you more bonus points if you have to)
+The preferred database for persisting this data in this challenge is PostgreSQL.
+
+Bonus points
+Well, we will award you bonus points based on the scenarios presented in the challenge.
+
+Apart from that, we are looking to be impressed by you. We like function based views but you can show us what you can do with class based views and who knows, we might like it.
+
+Ditch the usual python manage.py runserver and show us how you can serve your files using Nginx over Gunicorn.
+
+If you can be able to have this challenge be a matter of a single command to update the production build, because you have a pretty solid continuous delivery pipeline to wherever you will deploy your application then, you will probably have met us halfway.

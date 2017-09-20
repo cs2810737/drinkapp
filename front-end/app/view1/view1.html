@@ -1,0 +1,21 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<div ng-controller="View1Ctrl" class="md-padding" id="popupContainer">
+  
+
+  <div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="center">
+    
+    <md-button class="md-primary md-raised" ng-click="showPrompt($event)"  >
+      Record Drink
+    </md-button>
+    
+  </div>
+
+  <div ng-if="status" id="status">
+    <b layout="row" layout-align="center center" class="md-padding">
+      {{status}}
+    </b>
+  </div>
+</div>
